@@ -1,9 +1,11 @@
 # bb
 A tool I use to take small notes for all sorts of progress and search into those notes
 You take small notes like:
-`$ bb -w Just fed my cat this afternoon`
-`$ bb -w Installed a driver for my webcam`
-`...`
+```
+$ bb -w Just fed my cat this afternoon
+$ bb -w Installed a driver for my webcam
+...
+```
 Then you can search in your notes (In the same way `grep` does) like:
 ```
 $ bb cat
@@ -24,16 +26,20 @@ Searching in /home/username/Documents/bb.txt for cat
 
 # How to use it
 Bn order to call this script with a simple "bb <arguments>", I add in `~/.bashrc` or `~/.bash_aliases` the following:
-  `alias bb="python ~/Documents/bb.py"`
+```
+alias bb="python ~/Documents/bb.py"
+```
  For the script to work the first time you need to create a file in your "Documents" called `bb.txt`
 ```
 $ >~/Documents/bb.txt
 ```
  # Usage
-`	bb.py <words to search>`
-`	bb.py -w <words to write>`
-`	bb.py -a # Prints contents of the entire file`
-`	bb.py -e # Opens the nano editor to edit the file`
-
+```
+bb.py <words to search>
+bb.py -w <words to write>
+bb.py -a # Prints contents of the entire file
+bb.py -e # Opens the nano editor to edit the file
+```
 If you don't have the nano editor, just change the source code of bb.py and replace "nano" with your favorite editor.
-This is just a bodge I made for my own desires, and it's not a heavy script, to make it fit *your* own desires, I suggest you to modify it on your own and/or suggest me some ideas
+
+This is just a bodge I made for my own desires, and it's not a heavy script. To make it fit *your* own desires, feel absolutely free to modify it on your own and/or suggest me some ideas.
