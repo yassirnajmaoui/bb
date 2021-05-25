@@ -21,7 +21,7 @@ elif(argv[1]=="-w"):
 	print("--------------------\n")
 elif(argv[1]=="-e"):
         print("--------------------\nEditing "+FILE_LOC+"\n")
-        system("nano "+FILE_LOC)
+        system("edit "+FILE_LOC)
         print("Finished editing "+FILE_LOC+"\n--------------------\n")
 
 elif(argv[1]=="-a"):
