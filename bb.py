@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 from sys import argv
 from os import popen
 from os import system
@@ -28,7 +28,7 @@ elif(argv[1]=="-a"):
 	print("contents of "+FILE_LOC+"\n--------------------")
 	for line in open(FILE_LOC):
 		print(line)
-        print("--------------------\n")
+	print("--------------------\n")
 
 else:
 	to_search = ' '.join(argv[1:])
