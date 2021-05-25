@@ -34,6 +34,6 @@ else:
 	to_search = ' '.join(argv[1:])
 	print("Searching in "+FILE_LOC+" for "+to_search+"\n--------------------")
 	for line in open(FILE_LOC):
-		if to_search in ">".join(((line.split(">"))[1:])):
+		if to_search.lower() in (">".join(((line.split(">"))[1:]))).lower():
 			print(line)
 	print("--------------------\n")
